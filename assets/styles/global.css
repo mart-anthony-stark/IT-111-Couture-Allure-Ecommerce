@@ -7,3 +7,8 @@
   box-sizing: border-box;
   font-family: "Urbanist", sans-serif;
 }
+:root {
+  --c-pri: #000000;
+  --c-text-white: #fff;
+  --c-overlay-alpha: rgba(0, 0, 0, 0.4);
+}

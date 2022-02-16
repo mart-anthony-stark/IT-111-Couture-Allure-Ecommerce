@@ -12,3 +12,28 @@
   --c-text-white: #fff;
   --c-overlay-alpha: rgba(0, 0, 0, 0.4);
 }
+
+nav {
+  height: 60px;
+  background: var(--c-pri);
+  color: var(--c-text-white);
+  display: flex;
+  justify-content: space-between;
+  padding: 0 30px;
+  align-items: center;
+}
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
+nav .left,
+nav .left .links,
+nav .right {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+nav .right .cart {
+  height: 30px;
+  width: 30px;
+}

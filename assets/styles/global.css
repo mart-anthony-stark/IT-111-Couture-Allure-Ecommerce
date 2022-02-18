@@ -11,6 +11,7 @@
   --c-pri: #000000;
   --c-text-white: #fff;
   --c-overlay-alpha: rgba(0, 0, 0, 0.4);
+  --c-accent: rgb(33, 33, 184);
 }
 
 nav {
@@ -32,6 +33,9 @@ nav .right {
   display: flex;
   gap: 15px;
   align-items: center;
+}
+nav .left {
+  gap: 50px;
 }
 nav .right .cart {
   height: 30px;

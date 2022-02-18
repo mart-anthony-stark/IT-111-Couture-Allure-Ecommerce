@@ -54,3 +54,33 @@ nav .right .cart {
   top: 0;
   background: #000;
 }
+.product-card {
+  height: 400px;
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  padding: 3px;
+  padding-bottom: 15px;
+  background: #000;
+  transition: 0.5s ease-in-out;
+}
+.product-card:hover {
+  transform: scale(1.05);
+}
+.product-card img.prod {
+  height: 80%;
+  width: 100%;
+}
+.product-card .details {
+  color: #fff;
+  padding: 10px;
+}
+.product-card button {
+  padding: 8px;
+  margin: 0 10px;
+  cursor: pointer;
+  background: #000;
+  border: 1px solid white;
+  color: white;
+  font-size: 20px;
+}

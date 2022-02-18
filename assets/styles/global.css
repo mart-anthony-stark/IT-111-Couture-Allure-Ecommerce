@@ -13,7 +13,9 @@
   --c-overlay-alpha: rgba(0, 0, 0, 0.4);
   --c-accent: rgb(33, 33, 184);
 }
-
+button {
+  cursor: pointer;
+}
 nav {
   height: 60px;
   background: var(--c-pri);

@@ -15,14 +15,35 @@ section.banner .search input:focus {
 section.banner .slider {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+  max-width: 850px;
+  margin: auto;
   margin-top: 25px;
 }
 section.banner .slider img {
   height: 500px;
-  flex: 1;
   justify-self: flex-end;
 }
 section.banner .slider .welcome {
-  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+}
+section.banner .slider .welcome .sitename {
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+section.banner .slider .welcome .sitename h1 {
+  font-size: 3rem;
+}
+section.banner .slider .welcome button {
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  font-weight: 900;
+  cursor: pointer;
 }

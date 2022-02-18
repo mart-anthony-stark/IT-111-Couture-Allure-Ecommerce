@@ -45,6 +45,7 @@ nav .right .cart {
   font-size: 23px;
   display: flex;
   justify-content: center;
+  gap: 10px;
 }
 .section-title::before {
   content: "";

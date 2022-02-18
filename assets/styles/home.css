@@ -65,7 +65,6 @@ section.banner .right .welcome button {
   padding: 10px 20px;
   font-size: 1.2rem;
   font-weight: 900;
-  cursor: pointer;
 }
 /* Categories Section */
 section.categories .cards {
@@ -118,7 +117,6 @@ section.categories .cards .category button {
   border: 2px solid #fff;
   border-radius: 30px;
   padding: 5px;
-  cursor: pointer;
 }
 section.categories .cards .category > * {
   transition: 0.5s ease-in-out;
@@ -133,4 +131,17 @@ section.featured-products .products {
   justify-content: center;
   gap: 50px;
   flex-wrap: wrap;
+}
+section.featured-products .btn-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+section.featured-products button.view-all {
+  background: none;
+  border: 2px solid black;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-weight: 900;
+  font-size: 1.2rem;
 }

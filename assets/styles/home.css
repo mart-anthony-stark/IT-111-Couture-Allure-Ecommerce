@@ -1,44 +1,67 @@
 section {
   min-height: 100vh;
-  padding: 25px;
+  padding: 30px;
+  margin-bottom: 50px;
 }
 section.banner {
-  background: var(--c-pri);
-  color: var(--c-text-white);
+  padding: 0;
+}
+/* section.banner .slider {
+  display: flex;
+} */
+section.banner .slide {
+  /* width: 100%; */
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+}
+section.banner .search {
+  position: absolute;
+  top: 65px;
+  left: 25px;
 }
 section.banner .search input {
   padding: 5px;
 }
-section.banner .slider {
+section.banner .left {
+  flex: 1;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  max-width: 850px;
-  margin: auto;
-  margin-top: 25px;
+  justify-content: flex-end;
 }
-section.banner .slider img {
+section.banner .right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0 0 0 25px;
+  padding: 20px;
+  height: 100vh;
+  background: #000;
+  color: var(--c-text-white);
+}
+section.banner img {
   height: 500px;
   justify-self: flex-end;
 }
-section.banner .slider .welcome {
+section.banner .right .welcome {
   display: flex;
   flex-direction: column;
   gap: 15px;
   justify-content: center;
   align-items: center;
 }
-section.banner .slider .welcome .sitename {
+section.banner .right .welcome .sitename {
   font-family: "Roboto", sans-serif;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-section.banner .slider .welcome .sitename h1 {
+section.banner .right .welcome .sitename h1 {
   font-size: 3rem;
 }
-section.banner .slider .welcome button {
+section.banner .right .welcome button {
   padding: 10px 20px;
   font-size: 1.2rem;
   font-weight: 900;
@@ -52,6 +75,7 @@ section.categories .cards {
   grid-template-columns: repeat(4, 1fr);
 }
 section.categories .cards .category {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -59,26 +83,34 @@ section.categories .cards .category {
   height: 500px;
   gap: 10px;
   color: white;
+  z-index: 1;
+}
+section.categories .cards .category::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: -1;
 }
 section.categories .cards .category:nth-child(1) {
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url("../images/dress.jpg") center;
-  background-size: 200%;
+  /* --alpha: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)); */
+  background: url("../images/dress.jpg") center;
+  background-size: cover;
 }
 section.categories .cards .category:nth-child(2) {
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url("../images/shoes.jpg") center;
-  background-size: 200%;
+  /* --alpha: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)); */
+  background: url("../images/shoes.jpg") center;
+  background-size: cover;
 }
 section.categories .cards .category:nth-child(3) {
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url("../images/bags.jpg") center;
-  background-size: 200%;
+  /* --alpha: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)); */
+  background: url("../images/bags.jpg") center;
+  background-size: cover;
 }
 section.categories .cards .category:nth-child(4) {
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url("../images/cosmetics.jpg") center;
-  background-size: 200%;
+  /* --alpha: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)); */
+  background: url("../images/cosmetics.jpg") center;
+  background-size: cover;
 }
 section.categories .cards .category button {
   background: none;

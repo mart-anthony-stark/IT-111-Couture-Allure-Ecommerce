@@ -126,3 +126,11 @@ section.categories .cards .category > * {
 section.categories .cards .category:hover > * {
   transform: scale(1.4);
 }
+/* Featured Products */
+section.featured-products .products {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  flex-wrap: wrap;
+}

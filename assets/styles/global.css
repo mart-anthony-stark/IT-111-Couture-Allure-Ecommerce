@@ -16,6 +16,13 @@
 button {
   cursor: pointer;
 }
+/* Helper class */
+.flex {
+  display: flex;
+  gap: 15px;
+}
+
+/* Navigation */
 nav {
   height: 60px;
   background: var(--c-pri);

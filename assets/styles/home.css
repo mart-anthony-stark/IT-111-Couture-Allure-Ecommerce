@@ -1,0 +1,28 @@
+section {
+  min-height: 100vh;
+}
+section.banner {
+  padding: 25px;
+  background: var(--c-pri);
+  color: var(--c-text-white);
+}
+section.banner .search input {
+  padding: 5px;
+}
+section.banner .search input:focus {
+  outline: 3px solid var(--c-accent);
+}
+section.banner .slider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 25px;
+}
+section.banner .slider img {
+  height: 500px;
+  flex: 1;
+  justify-self: flex-end;
+}
+section.banner .slider .welcome {
+  flex: 1;
+}

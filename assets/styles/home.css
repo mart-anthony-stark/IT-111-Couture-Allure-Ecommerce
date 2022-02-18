@@ -155,14 +155,18 @@ footer {
 }
 footer .logo {
   border-left: 8px solid white;
-  font-size: 40px;
+  font-size: 38px;
   font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 footer .logo span {
   display: block;
 }
 footer .col-title {
   font-weight: 400;
+  margin-bottom: 10px;
 }
 footer .products-link .links a {
   display: block;

@@ -41,3 +41,15 @@ nav .right .cart {
   height: 30px;
   width: 30px;
 }
+.section-title {
+  font-size: 23px;
+  display: flex;
+  justify-content: center;
+}
+.section-title::before {
+  content: "";
+  height: 40px;
+  width: 5px;
+  top: 0;
+  background: #000;
+}

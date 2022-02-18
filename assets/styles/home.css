@@ -145,3 +145,33 @@ section.featured-products button.view-all {
   font-weight: 900;
   font-size: 1.2rem;
 }
+
+footer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  background: #000;
+  color: white;
+  padding: 50px;
+}
+footer .logo {
+  border-left: 8px solid white;
+  font-size: 40px;
+  font-weight: 400;
+}
+footer .logo span {
+  display: block;
+}
+footer .col-title {
+  font-weight: 400;
+}
+footer .products-link .links a {
+  display: block;
+  margin-bottom: 5px;
+  color: white;
+}
+footer .payments img {
+  max-height: 40px;
+}
+footer .payments .flex {
+  margin-bottom: 10px;
+}

@@ -179,3 +179,46 @@ footer .payments img {
 footer .payments .flex {
   margin-bottom: 10px;
 }
+footer .connect {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 25px;
+  justify-content: center;
+}
+footer .connect .title {
+  font-size: 20px;
+}
+footer .connect .newsletter .email-input {
+  padding: 2px;
+  background: white;
+}
+footer .connect .newsletter input,
+footer .connect .newsletter .email-input button {
+  padding: 10px;
+  border: none;
+}
+footer .connect .newsletter .email-input button {
+  background: #000;
+  color: white;
+}
+footer .connect .icons a {
+  color: white;
+  font-size: 40px;
+}
+
+@media (max-width: 1020px) {
+  footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: center;
+  }
+}
+@media (max-width: 900px) {
+  footer {
+    gap: 50px;
+    justify-content: center;
+  }
+}

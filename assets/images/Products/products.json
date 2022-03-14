@@ -1,0 +1,47 @@
+[
+    {
+        "id": 1,
+        "category":"dress",
+        "name": "Rib-knit Puff Sleeve Sexy Dress"
+    },
+    {
+        "id": 2,
+        "category":"dress",
+        "name": "Sexy korean plain dress"
+    },
+    {
+        "id": 3,
+        "category":"dress",
+        "name": "Off shoulder maxi korean elegant dress"
+    },
+    {
+        "id": 4,
+        "category":"dress",
+        "name": "ANNIKA Bangkok Floral Ribbon Dress"
+    },
+    {
+        "id": 5,
+        "category":"bag",
+        "name": "Chain fashion Lady crossbody bag"
+    },
+    {
+        "id": 6,
+        "category":"bag",
+        "name": "Korean Fashion Leather Sling Bag"
+    },
+    {
+        "id": 7,
+        "category":"bag",
+        "name": "YZ Korean fashion Canvas sling bag"
+    },
+    {
+        "id": 8,
+        "category":"bag",
+        "name": "Flagship Korean Fashion Shoulder Leather Bag"
+    },
+    {
+        "id": 9,
+        "category":"shoes",
+        "name": "Korean fashion 2.5 inches heels"
+    }
+]

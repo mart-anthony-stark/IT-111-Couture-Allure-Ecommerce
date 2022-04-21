@@ -22,6 +22,14 @@ button {
   gap: 15px;
 }
 
+/* texts */
+.text-center {
+  text-align: center;
+}
+.section-header {
+  font-size: 2rem;
+  margin-top: 30px;
+}
 /* Navigation */
 nav {
   height: 60px;
@@ -186,4 +194,12 @@ footer .connect .icons a {
     gap: 50px;
     justify-content: center;
   }
+}
+
+/* Products list */
+.products {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
 }

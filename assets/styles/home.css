@@ -125,11 +125,14 @@ section.categories .cards .category:hover > * {
   transform: scale(1.4);
 }
 /* Featured Products */
+section.featured-products {
+  padding: 10px;
+}
 section.featured-products .products {
   margin-top: 50px;
   display: flex;
   justify-content: center;
-  gap: 50px;
+  gap: 30px;
   flex-wrap: wrap;
 }
 section.featured-products .btn-container {
@@ -145,4 +148,3 @@ section.featured-products button.view-all {
   font-weight: 900;
   font-size: 1.2rem;
 }
-

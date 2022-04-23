@@ -78,10 +78,10 @@ nav .right .cart {
   background: #000;
 }
 .product-card {
-  height: 400px;
-  width: 250px;
-  display: flex;
-  flex-direction: column;
+  height: 420px;
+  width: 300px;
+  display: grid;
+  grid-template-rows: 300px 60px 1fr;
   padding: 3px;
   padding-bottom: 15px;
   background: #000;
@@ -91,12 +91,18 @@ nav .right .cart {
   transform: scale(1.05);
 }
 .product-card img.prod {
-  height: 80%;
+  height: 300px;
   width: 100%;
 }
 .product-card .details {
   color: #fff;
   padding: 10px;
+  display: grid;
+  grid-template-columns: 50px 1fr;
+  gap: 10px;
+}
+.product-card .details .name {
+  text-align: center;
 }
 .product-card button {
   padding: 8px;

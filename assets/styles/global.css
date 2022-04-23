@@ -13,6 +13,12 @@
   --c-overlay-alpha: rgba(0, 0, 0, 0.4);
   --c-accent: rgb(33, 33, 184);
 }
+/* HIDE COMPILING STATE OF VUE.JS */
+[v-cloak] {
+  display: display;
+}
+
+/* RESETS */
 button {
   cursor: pointer;
 }
@@ -202,4 +208,9 @@ footer .connect .icons a {
   gap: 30px;
   flex-wrap: wrap;
   justify-content: center;
+}
+
+a {
+  all: unset;
+  cursor: pointer;
 }

@@ -27,39 +27,14 @@
         <section>
             <h1 class="section-header text-center">{{category}}</h1>
             <div class="products">
-                <div class="product-card">
-                    <img class="prod" src="./assets/images/Products/Dresses/1.jpg">
+                <div v-for="(product, i) in filteredProducts" class="product-card">
+                    <img class="prod" :src="product.image">
+
                     <div class="details">
                         <span class="price">
-                            ₱ 700
+                            ₱ {{product.price}}
                         </span>
-                    </div>
-                    <button>View Product</button>
-                </div>
-                <div class="product-card">
-                    <img class="prod" src="./assets/images/Products/Dresses/2.jpg">
-                    <div class="details">
-                        <span class="price">
-                            ₱ 1200
-                        </span>
-                    </div>
-                    <button>View Product</button>
-                </div>
-                <div class="product-card">
-                    <img class="prod" src="./assets/images/Products/Dresses/3.jpg">
-                    <div class="details">
-                        <span class="price">
-                            ₱ 999
-                        </span>
-                    </div>
-                    <button>View Product</button>
-                </div>
-                <div class="product-card">
-                    <img class="prod" src="./assets/images/Products/Dresses/4.jpg">
-                    <div class="details">
-                        <span class="price">
-                            ₱ 700
-                        </span>
+                        <span class="name">{{product.name}}</span>
                     </div>
                     <button>View Product</button>
                 </div>

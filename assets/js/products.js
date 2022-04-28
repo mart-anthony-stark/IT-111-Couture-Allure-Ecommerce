@@ -106,7 +106,7 @@ const app = new Vue({
       }
     },
     viewProduct: (id) => {
-      window.location = `/product.html?id=${id}`;
+      window.location = `./product.php?id=${id}`;
     },
   },
   mounted() {

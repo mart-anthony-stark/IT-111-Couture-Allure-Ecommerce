@@ -6,6 +6,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Urbanist", sans-serif;
+  scroll-behavior: smooth;
 }
 :root {
   --c-pri: #000000;
@@ -21,6 +22,13 @@
 /* RESETS */
 button {
   cursor: pointer;
+}
+button.cta {
+  padding: 10px 20px;
+  border: none;
+  text-transform: uppercase;
+  background: #000;
+  color: #fff;
 }
 /* Helper class */
 .flex {

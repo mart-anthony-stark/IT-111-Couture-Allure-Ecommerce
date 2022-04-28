@@ -18,8 +18,8 @@
                 <h3 class="logo">CA</h3>
                 <div class="links">
                     <a href="/home.html">Home</a>
-                    <a href="#">Categories</a>
-                    <a href="#">Products</a>
+                    <a href="/home.html#categories">Categories</a>
+                    <a href="/home.html#featured">Products</a>
                     <a href="#">About Us</a>
                 </div>
             </div>
@@ -36,7 +36,7 @@
                         </span>
                         <span class="name">{{product.name}}</span>
                     </div>
-                    <button>View Product</button>
+                    <button @click="viewProduct(product.id)">View Product</button>
                 </div>
             </div>
         </section>

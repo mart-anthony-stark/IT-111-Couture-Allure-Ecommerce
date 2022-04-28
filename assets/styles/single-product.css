@@ -1,0 +1,31 @@
+.two-cols {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  place-items: center;
+}
+.item .item-image {
+  width: 400px;
+  height: 500px;
+}
+.item .details {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 80%;
+}
+.item .details h1 {
+  font-size: 1.5rem;
+  color: rgb(46, 46, 46);
+}
+.item .details .bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: flex-start;
+}
+.item .details .bottom button {
+  width: 350px;
+}
+.container {
+  padding: 20px;
+}

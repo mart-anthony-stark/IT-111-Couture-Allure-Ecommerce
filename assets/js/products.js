@@ -105,6 +105,9 @@ const app = new Vue({
         }
       }
     },
+    viewProduct: (id) => {
+      window.location = `/product.html?id=${id}`;
+    },
   },
   mounted() {
     const category = this.getQueryVariable("category");

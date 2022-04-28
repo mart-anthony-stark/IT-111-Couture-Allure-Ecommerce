@@ -167,10 +167,10 @@ footer .products-link .links a {
   color: white;
 }
 footer .payments img {
-  max-height: 40px;
+  height: 30px;
 }
 footer .payments .flex {
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 footer .connect {
   display: flex;

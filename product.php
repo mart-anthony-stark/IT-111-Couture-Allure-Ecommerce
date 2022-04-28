@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./assets/styles/global.css">
     <link rel="stylesheet" href="./assets/styles/single-product.css">
     <title>Single item</title>
@@ -16,9 +17,9 @@
             <div class="left">
                 <h3 class="logo">Logo</h3>
                 <div class="links">
-                    <a href="/home.html">Home</a>
-                    <a href="/home.html#categories">Categories</a>
-                    <a href="/home.html#featured">Products</a>
+                    <a href="./home.php">Home</a>
+                    <a href="./home.php#categories">Categories</a>
+                    <a href="./home.php#featured">Products</a>
                     <a href="#">About Us</a>
                 </div>
             </div>
@@ -46,6 +47,7 @@
             </div>
         </div>
     </div>
+    <?php require('./_footer.php')?>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14"></script>
 <script src="./assets/js/product.js"></script>

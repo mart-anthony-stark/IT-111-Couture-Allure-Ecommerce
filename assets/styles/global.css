@@ -16,7 +16,7 @@
 }
 /* HIDE COMPILING STATE OF VUE.JS */
 [v-cloak] {
-  display: display;
+  display: none;
 }
 
 /* RESETS */

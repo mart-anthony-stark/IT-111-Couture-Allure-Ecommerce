@@ -19,6 +19,10 @@
   display: none;
 }
 
+h1 {
+  color: rgb(54, 54, 54);
+}
+
 /* RESETS */
 button {
   cursor: pointer;
@@ -160,6 +164,7 @@ footer .logo span {
 footer .col-title {
   font-weight: 400;
   margin-bottom: 10px;
+  color: #fff;
 }
 footer .products-link .links a {
   display: block;

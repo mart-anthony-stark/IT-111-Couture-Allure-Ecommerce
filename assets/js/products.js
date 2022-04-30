@@ -23,6 +23,7 @@ const app = new Vue({
   },
   methods: {
     parseCategory() {
+      // Check if category query is valid product category
       const category = this.getQueryVariable("category");
       if (!category || !CATEGORIES.includes(category)) return;
 

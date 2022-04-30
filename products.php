@@ -38,6 +38,7 @@
                     </div>
                     <button @click="viewProduct(product.id)">View Product</button>
                 </div>
+                <h1 v-if="filteredProducts.length == 0">There are no products.</h1>
             </div>
         </section>
 

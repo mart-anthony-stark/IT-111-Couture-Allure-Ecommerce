@@ -16,7 +16,11 @@
 }
 /* HIDE COMPILING STATE OF VUE.JS */
 [v-cloak] {
-  display: display;
+  display: none;
+}
+
+h1 {
+  color: rgb(54, 54, 54);
 }
 
 /* RESETS */
@@ -160,6 +164,7 @@ footer .logo span {
 footer .col-title {
   font-weight: 400;
   margin-bottom: 10px;
+  color: #fff;
 }
 footer .products-link .links a {
   display: block;

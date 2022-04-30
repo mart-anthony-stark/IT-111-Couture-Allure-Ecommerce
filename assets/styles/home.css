@@ -59,6 +59,7 @@ section.banner .right .welcome .sitename {
   align-items: center;
 }
 section.banner .right .welcome .sitename h1 {
+  color: #fff !important;
   font-size: 3rem;
 }
 section.banner .right .welcome button {
@@ -123,6 +124,9 @@ section.categories .cards .category > * {
 }
 section.categories .cards .category:hover > * {
   transform: scale(1.4);
+}
+section.categories .cards .category h1 {
+  color: #fff !important;
 }
 /* Featured Products */
 section.featured-products {

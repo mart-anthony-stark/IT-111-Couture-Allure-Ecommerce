@@ -7,9 +7,18 @@ new Vue({
         category: "",
         name: "0",
         image: "",
+        description: "",
+        rating: 0,
         price: 0,
       },
     };
+  },
+  filters: {
+    currency(val) {
+      return parseInt(val)
+        .toFixed(2)
+        .replace(/\d(?=(\d{3})+\.)/g, "$&,");
+    },
   },
   methods: {
     getQueryVariable(testVar) {

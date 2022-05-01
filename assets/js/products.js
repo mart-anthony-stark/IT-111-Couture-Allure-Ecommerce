@@ -21,6 +21,13 @@ const app = new Vue({
       console.log(this.category);
     },
   },
+  filters: {
+    currency(val) {
+      return parseInt(val)
+        .toFixed(2)
+        .replace(/\d(?=(\d{3})+\.)/g, "$&,");
+    },
+  },
   methods: {
     parseCategory() {
       // Check if category query is valid product category

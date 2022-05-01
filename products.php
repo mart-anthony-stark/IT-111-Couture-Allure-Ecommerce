@@ -32,7 +32,9 @@
 
                     <div class="details">
                         <span class="price">
-                            ₱ {{product.price}}
+                            ₱ {{
+                                product.price | currency
+                            }}
                         </span>
                         <span class="name">{{product.name}}</span>
                     </div>

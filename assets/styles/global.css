@@ -110,7 +110,7 @@ nav .right .cart {
   color: #fff;
   padding: 10px;
   display: grid;
-  grid-template-columns: 50px 1fr;
+  grid-template-columns: 80px 1fr;
   gap: 10px;
 }
 .product-card .details .name {

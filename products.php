@@ -36,7 +36,7 @@
                                 product.price | currency
                             }}
                         </span>
-                        <span class="name">{{product.name}}</span>
+                        <span class="stars"><img v-for="x in parseInt(product.rating)" :key="x" src="./assets/images/star.png" alt="as"></span>
                     </div>
                     <button @click="viewProduct(product.id)">View Product</button>
                 </div>

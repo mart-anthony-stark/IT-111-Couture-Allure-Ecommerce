@@ -28,4 +28,13 @@
 }
 .container {
   padding: 20px;
+  margin-bottom: 100px;
+}
+.item .star {
+  height: 30px;
+  width: 30px;
+}
+.item h4 {
+  color: grey;
+  margin-top: 10px;
 }

@@ -36,11 +36,14 @@
             <div class="item two-cols">
                 <img class="item-image" :src="item.image" :alt="item.name">
                 <div class="details">
-                    <h1>{{item.name}}</h1>
-                    <div class="desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi blanditiis vitae
-                        mollitia tempore ad quasi magnam natus vel hic corrupti!</div>
+                    <div>
+                        <h1>{{item.name}}</h1>
+                        <img class="star" v-for="x in parseInt(item.rating)" src="./assets/images/star.png" alt="rating">
+                        <h4>{{item.category.toUpperCase()}}</h4>
+                    </div>
+                    <div class="desc">{{item.description}}</div>
                     <div class="bottom">
-                        <h1 class="price">₱ {{item.price}}</h1>
+                        <h1 class="price">₱ {{item.price | currency}}</h1>
                         <button class="cta">ADD TO CART</button>
                     </div>
                 </div>

@@ -112,9 +112,17 @@ nav .right .cart {
   display: grid;
   grid-template-columns: 80px 1fr;
   gap: 10px;
+  place-items: center;
 }
-.product-card .details .name {
+.product-card .details .stars {
   text-align: center;
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+.product-card .details .stars img {
+  height: 20px;
+  width: 20px;
 }
 .product-card button {
   padding: 8px;

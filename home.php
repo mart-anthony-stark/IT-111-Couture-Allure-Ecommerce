@@ -46,7 +46,7 @@
                             <h1>Couture Allure</h1>
                             <span>Make people adore you</span>
                         </div>
-                        <button>SHOP NOW</button>
+                        <button onclick="navigate('./products.php')">SHOP NOW</button>
                     </div>
                 </div>
             </div>

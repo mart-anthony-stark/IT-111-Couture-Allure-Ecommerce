@@ -1,7 +1,6 @@
 <?php
     require('../db.php');
 
-    // if() echo $_GET['category'];
     $sql = isset($_GET['category']) ? "SELECT * FROM product WHERE category='{$_GET['category']}'" :"SELECT * FROM product";
     if(isset($_GET['id'])) $sql = "SELECT * FROM product WHERE id='{$_GET['id']}'";
     

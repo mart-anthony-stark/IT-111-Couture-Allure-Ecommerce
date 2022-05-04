@@ -12,24 +12,9 @@
 </head>
 
 <body>
-    <nav>
-        <div class="left">
-            <h3 class="logo">CA</h3>
-            <div class="links">
-                <a href="./home.php">Home</a>
-                <a href="#categories">Categories</a>
-                <a href="#featured">Products</a>
-                <a href="#">About Us</a>
-            </div>
-        </div>
-        <div class="right">
-            <a href="signup.php">Signup</a>
-            <a href="./login.php">Login</a>
-            <a href="#">
-                <img class="cart" src="./assets/svg/cart.svg" alt="cart">
-            </a>
-        </div>
-    </nav>
+    <div id="root" v-cloak>
+    <?php require('./_nav.php')?>
+
     <section class="banner">
         <div class="search">
             <span class="lang">EN</span>
@@ -127,7 +112,12 @@
     </section>
 
     <?php require('./_footer.php')?>
+    </div>
 </body>
+<script src="https://cdn.jsdelivr.net/npm/vue@2.6.14"></script>
+    
+
+<script src="./assets/js/home.js"></script>
 <script src="./assets/js/app.js"></script>
 
 </html>

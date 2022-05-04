@@ -76,6 +76,10 @@ nav .right .cart {
   height: 30px;
   width: 30px;
 }
+nav .logout {
+  padding: 10px 20px;
+  border: none;
+}
 .section-title {
   font-size: 23px;
   display: flex;

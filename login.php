@@ -29,7 +29,7 @@
         <div class="image"></div>
         <div class="form-container center col">
             <h1 class="welcome">Welcome Back to <br />Couture Allure</h1>
-            <form action="#">
+            <form @submit.prevent="login()">
                 <div class="field">
                     <label>Email</label>
                     <input ref="email" type="text" placeholder="johndoe@gmail.com">
@@ -38,7 +38,7 @@
                     <label>Password</label>
                     <input ref="password" type="password">
                 </div>
-                <button @click="login()">LOGIN</button>
+                <button>LOGIN</button>
             </form>
             <span>Doesn't have an account? <a href="./signup.php">Register</a></span>
         </div>

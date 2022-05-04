@@ -34,7 +34,6 @@ $sql = "INSERT INTO user VALUES(
 if ($conn->query($sql) === TRUE) {
     // Signup success -> return jwt access_token
     $last_id = $conn->insert_id;
-    echo $last_id;
     $token = hash_token($last_id);
     echo json_encode((object) ["x-access-token"=>$token]);
 } else {

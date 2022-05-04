@@ -24,6 +24,7 @@ form input {
   width: 100%;
   border: 2px solid black;
   padding: 10px;
+  font-size: 1.2rem;
 }
 button {
   padding: 10px;

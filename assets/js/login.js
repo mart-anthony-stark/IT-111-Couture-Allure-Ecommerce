@@ -20,12 +20,36 @@ new Vue({
       }
       return valid;
     },
-    login() {
+    async login() {
       const email = this.$refs.email.value;
       const password = this.$refs.password.value;
-      if (this.validateInputs(email, password))
-        toastr.success("Successfully logged in!");
+      if (this.validateInputs(email, password)) {
+        const res = await fetch(`./api/auth/login.php`, {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ email, password }),
+        });
+        const data = await res.json();
+        if (!res.ok) {
+          toastr.error(data.msg);
+        } else {
+          toastr.success("Successfully logged in!");
+          localStorage.setItem("x-access-token", data["x-access-token"]);
+          setInterval(() => {
+            window.location = "./home.php";
+          }, 1000);
+        }
+      }
     },
   },
-  mounted() {},
+  async mounted() {
+    const res = await fetch(`./api/auth/verify.php`, {
+      method: "GET",
+      headers: {
+        "Content-Type": "application/json",
+        authorization: `bearer ${localStorage.getItem("x-access-token")}`,
+      },
+    });
+    if (res.ok) window.location = "./home.php";
+  },
 });

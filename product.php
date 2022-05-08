@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./assets/styles/toastr.min.css" />
     <link rel="stylesheet" href="./assets/styles/global.css">
     <link rel="stylesheet" href="./assets/styles/single-product.css">
     <title>Single item</title>
@@ -13,25 +14,8 @@
 
 <body>
     <div id="root" v-cloak>
-        <nav>
-            <div class="left">
-                <h3 class="logo">Logo</h3>
-                <div class="links">
-                    <a href="./home.php">Home</a>
-                    <a href="./home.php#categories">Categories</a>
-                    <a href="./home.php#featured">Products</a>
-                    <a href="#">About Us</a>
-                </div>
-            </div>
-            <div class="right">
-                <a href="#">Signup</a>
-                <a href="#">Login</a>
-                <a href="#">
-                    <img class="cart" src="./assets/svg/cart.svg" alt="cart">
-                </a>
-            </div>
+        <?php require('./_nav.php');?>
 
-        </nav>
         <div class="container">
             <div class="item two-cols">
                 <img class="item-image" :src="item.image" :alt="item.name">
@@ -44,7 +28,12 @@
                     <div class="desc">{{item.description}}</div>
                     <div class="bottom">
                         <h1 class="price">₱ {{item.price | currency}}</h1>
-                        <button class="cta">ADD TO CART</button>
+                        <div class="quantity">
+                            <button @click="changeQuantity('minus')">-</button>
+                            <span>{{quantity}}</span>
+                            <button @click="changeQuantity('add')">+</button>
+                        </div>
+                        <button @click="addToCart" class="cta">ADD TO CART</button>
                     </div>
                 </div>
             </div>
@@ -52,7 +41,13 @@
     </div>
     <?php require('./_footer.php')?>
 </body>
+
 <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14"></script>
+<script
+    src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous"></script>
+    <script src="./assets/js/toastr.min.js"></script>
 <script src="./assets/js/product.js"></script>
 
 </html>

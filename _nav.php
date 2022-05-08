@@ -13,9 +13,11 @@
 <div v-if="!user" class="right">
     <a href="signup.php">Signup</a>
     <a href="./login.php">Login</a>
+</div>
+<div v-else class="logged-right">
     <a href="#">
         <img class="cart" src="./assets/svg/cart.svg" alt="cart">
     </a>
+    <button v-if="user" class="logout" @click="logout()">Logout</button>
 </div>
-<button v-if="user" class="logout" @click="logout()">Logout</button>
 </nav>

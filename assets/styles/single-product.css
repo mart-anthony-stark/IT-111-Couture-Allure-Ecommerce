@@ -26,6 +26,20 @@
 .item .details .bottom button {
   width: 350px;
 }
+
+.item .details .bottom .quantity {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.item .details .bottom .quantity button {
+  width: 40px;
+  height: 40px;
+  border: 2px solid #000;
+  background: white;
+}
+
 .container {
   padding: 20px;
   margin-bottom: 100px;

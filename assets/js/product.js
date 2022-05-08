@@ -68,17 +68,18 @@ new Vue({
 
       const body = JSON.stringify({
         user: this.user.id,
-        item: this.item.id,
+        product: this.item.id,
         quantity: this.quantity,
       });
 
-      // const res = await fetch(`./api/cart/add.php`, {
-      //   method: "POST",
-      //   headers: { "Content-Type": "application/json" },
-      //   body,
-      // });
-      console.log(body);
-
+      const res = await fetch(`./api/cart/add.php`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body,
+      });
+      if (!res.ok) {
+        toastr.error("Something went wrong!");
+      }
       toastr.success("Item was added to your cart");
       this.quantity = 1;
     },

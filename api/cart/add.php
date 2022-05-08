@@ -11,7 +11,7 @@ if(!isset($body['user']) || !isset($body['product']) || !isset($body['quantity']
     return;
 }
 
-$sql = "SELECT * FROM cart WHERE product=$body[product]";
+$sql = "SELECT * FROM cart WHERE product=$body[product] AND user=$body[user]";
 $existingProduct = mysqli_query($conn, $sql);
 
 $product = array();

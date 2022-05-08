@@ -20,6 +20,7 @@ section.banner .search {
   position: absolute;
   top: 65px;
   left: 25px;
+  z-index: 1;
 }
 section.banner .search input {
   padding: 5px;

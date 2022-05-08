@@ -72,7 +72,11 @@ nav .right {
 nav .left {
   gap: 50px;
 }
-nav .right .cart {
+nav .logged-right {
+  display: flex;
+  gap: 1rem;
+}
+nav .logged-right .cart {
   height: 30px;
   width: 30px;
 }

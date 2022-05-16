@@ -1,0 +1,50 @@
+table {
+  /* max-width: 1200px; */
+  width: 100%;
+  margin-top: 1rem;
+  padding: 1rem;
+  border-collapse: collapse;
+}
+
+table tbody {
+  margin-bottom: 2rem;
+}
+table tbody tr {
+  border-bottom: 1px solid rgb(180, 180, 180);
+  padding: 1rem;
+}
+
+table th {
+  font-size: 1.3rem;
+  text-transform: uppercase;
+}
+
+table tr td:nth-child(1) {
+  width: 100px;
+}
+
+table td,
+table th {
+  text-align: center;
+}
+
+table td .preview {
+  height: 200px;
+  width: 200px;
+}
+table input[type="checkbox"] {
+  height: 30px;
+  width: 30px;
+}
+
+.quantity-controls button {
+  margin: 0 10px;
+  padding: 10px;
+  border: 2px solid black;
+}
+
+.delete-btn {
+  padding: 10px 20px;
+  background: #000;
+  color: #fff;
+}

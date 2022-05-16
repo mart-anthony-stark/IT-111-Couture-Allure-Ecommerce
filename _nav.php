@@ -15,7 +15,7 @@
     <a href="./login.php">Login</a>
 </div>
 <div v-else class="logged-right">
-    <a href="#">
+    <a href="./cart.php">
         <img class="cart" src="./assets/svg/cart.svg" alt="cart">
     </a>
     <button v-if="user" class="logout" @click="logout()">Logout</button>

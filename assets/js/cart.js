@@ -6,6 +6,14 @@ new Vue({
       cart: [],
     };
   },
+  computed: {
+    total() {
+      return this.cart.reduce(
+        (agg, i) => (agg += parseInt(i.price) * i.quantity),
+        0
+      );
+    },
+  },
   methods: {
     logout() {
       localStorage.clear();

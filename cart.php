@@ -49,7 +49,15 @@
                     <hr>
                </tr>
            </tbody>
-       </table>
+        </table>
+        <h2 v-if="cart.length==0" class="no-item">You have no item in your cart yet</h2>
+        <div v-else class="checkout-btns">
+            <span class="total">
+            Total ₱{{total}}
+
+            </span>
+            <button>CHECKOUT</button>
+        </div>
     </section>
     
     

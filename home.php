@@ -76,7 +76,7 @@
                         ₱ 700
                     </span>
                 </div>
-                <button>View Product</button>
+                <button onclick="navigate('./product.php?id=2')">View Product</button>
             </div>
             <div class="product-card">
                 <img class="prod" src="./assets/images/Products/Bags/5.jpg">
@@ -85,7 +85,7 @@
                         ₱ 1200
                     </span>
                 </div>
-                <button>View Product</button>
+                <button onclick="navigate('./product.php?id=17')">View Product</button>
             </div>
             <div class="product-card">
                 <img class="prod" src="./assets/images/Products/Bags/6.jpg">
@@ -94,7 +94,7 @@
                         ₱ 999
                     </span>
                 </div>
-                <button>View Product</button>
+                <button onclick="navigate('./product.php?id=18')">View Product</button>
             </div>
             <div class="product-card">
                 <img class="prod" src="./assets/images/Products/Shoes/9.jpg">
@@ -103,7 +103,7 @@
                         ₱ 700
                     </span>
                 </div>
-                <button>View Product</button>
+                <button onclick="navigate('./product.php?id=28')">View Product</button>
             </div>
         </div>
         <div class="btn-container">
